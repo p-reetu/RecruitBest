@@ -28,9 +28,7 @@ nav{
     color: var(--color1);
     background-color: var(--color3);
 }
-#main-col{
-    height: 100vh;
-}
+
 #main-heading{
     font-family: recoleta;
     font-size: 70px;
@@ -57,6 +55,10 @@ nav{
 #hero-image{
     width: 40vw; float: inline-end; vertical-align: bottom; margin-top: 75px;
     animation: img-animation 4s ease-in-out 1s;
+}
+#hero-image-mob{
+    width: 90vw;
+    float: inline-start;
 }
 
 #recruitbest{
@@ -161,6 +163,19 @@ a{
 }
 @media (max-width:1200px) {
     #hero-image{
+        display: none;
+    }
+}
+@media (min-width:1200px) {
+    #hero-image-mob{
+        display: none;
+    }
+    #main-col{
+        height: 100vh;
+    }
+}
+@media (min-width:990px) {
+    #hero-image-mob{
         display: none;
     }
 }
