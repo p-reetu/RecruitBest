@@ -1,0 +1,212 @@
+:root{
+    --color1: #0f1123;
+    --color2: rgb(12, 7, 59);
+    --color3: #ff275b;
+    --color4: #ffd35b;
+
+    --color5: #f548a0;
+    --color6: #f57c35;
+    --grey: #afafaf;
+}
+body{
+    background-image: linear-gradient(to bottom right, var(--color1), var(--color2)) ;
+}
+nav{
+    background-color: rgba(15, 17, 35, 0.9);
+    
+}
+#logo{
+    height: 15px;
+    vertical-align:baseline;
+}
+#nav-button{
+    border: var(--color3) solid 1px;
+    color: var(--color3);
+}
+#nav-button:hover{
+    border: var(--color3) solid 1px;
+    color: var(--color1);
+    background-color: var(--color3);
+}
+#main-col{
+    height: 100vh;
+}
+#main-heading{
+    font-family: recoleta;
+    font-size: 70px;
+    z-index: 9;
+    position: relative;
+}
+#sub-heading{
+    color: var(--grey);
+}
+#recruit{
+    color: var(--color3);
+    animation: process 9s ease-in-out;
+}
+#cta{
+    color: white;
+    border: none;
+    background-image: linear-gradient(90deg, var(--color5), var(--color6));
+    animation: explore-button 2s ease-out;
+}
+#cta:hover{
+    color: white;
+    background-image: linear-gradient(270deg, var(--color5), var(--color6));
+}
+#hero-image{
+    width: 40vw; float: inline-end; vertical-align: bottom; margin-top: 75px;
+    animation: img-animation 4s ease-in-out 1s;
+}
+
+#recruitbest{
+    color: var(--color3);
+}
+#companies{
+    height: 120px;
+}
+#know-more{
+    color: var(--color3);
+}
+
+#feedback-col{
+    background-image: linear-gradient(90deg, var(--color5), var(--color6));
+    padding: 50px;
+    margin: 50px 50px 0 50px;
+}
+#read-more{
+    color: var(--color3);
+    margin-right: 38px;
+    border-radius: 0;
+    background-color: white;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#right-candidate{
+    color: var(--color3);
+}
+#ways{
+    border: grey solid 1px;
+    margin: 50px 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+#ways:hover{
+    border: grey solid 1px;
+    margin: 50px 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: linear-gradient(90deg, var(--color5), var(--color6));
+    animation: smooth-hover 2s ease-in-out;
+}
+#method-icon{
+    margin: auto;
+    display: block;
+    width: 50px;
+}
+
+#start-hiring-now{
+    font-size: 70px;
+}
+#start-now{
+    background-image: linear-gradient(90deg, var(--color5), var(--color6));
+}
+#start-hiring-button{
+    color:var(--color3);
+    background-color: white;
+    margin-bottom: 80px ;
+}
+#start-hiring-button:hover{
+    color: white;
+    background-color: transparent;
+    border: white solid 1px;
+    margin-bottom: 80px ;
+}
+#social-links{
+    display: inline-block;
+    height: 30px;
+    padding: 5px;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+    #hero-image{
+        display: none;
+    }
+    #main-heading{
+        font-family: recoleta;
+        font-size: 45px;
+    }
+    #feedback{
+        font-size: 20px;
+    }
+    #name{
+        font-size: small;
+    }
+    #read-more{
+        color: var(--color3);
+        margin-right: 38px;
+        border-radius: 0;
+        background-color: white;
+        border: none;
+        margin-left: 38px;
+    }
+    #start-hiring-now{
+        font-size: 50px;
+    }
+}
+@media (max-width:1200px) {
+    #hero-image{
+        display: none;
+    }
+}
+
+/* Animations */
+@keyframes explore-button {
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes img-animation {
+    0%{
+        transform: translate(20px);
+    }
+    100%{
+        transform: translate(4px);
+    }
+}
+@keyframes smooth-hover {
+    0%{
+        transform:scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes process {
+    0%{
+        opacity: 0.2;
+    }
+    30%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 0.2;
+    }
+    60%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
